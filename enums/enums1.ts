@@ -4,6 +4,6 @@ enum Membership {
     Premium
 };
 
-const membership = Membership.Simple;
+const membership = Membership.Standard;
 
 console.log(membership);
