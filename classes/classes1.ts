@@ -1,3 +1,5 @@
+import IDriveable from "./IDriveable";
+
 class TypeScroll {
     version: string;
 
@@ -5,13 +7,9 @@ class TypeScroll {
         this.version = version;
     }
 
-    info (name: string) {
+    Info (name: string) {
         return `[${name}]: TypeScroll version is ${this.version}.`;
     }
-}
-
-interface IDriveable {
-    Drive(toLocation: string) : void
 }
 
 class Car implements IDriveable {
@@ -28,3 +26,6 @@ class Car implements IDriveable {
 
 var car = new Car("Tesla");
 car.Drive("Odessa");
+
+var types = new TypeScroll("2.0.1");
+types.Info("Ruslan");
