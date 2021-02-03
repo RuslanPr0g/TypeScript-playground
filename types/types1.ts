@@ -40,4 +40,3 @@ const lol: Lol = "lol";
 type ID = string | number;
 const id1: ID = 111;
 const id2: ID = "111";
-
