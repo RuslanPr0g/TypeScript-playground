@@ -26,3 +26,9 @@ const rect2: Rect = {
 }
 
 rect2.color = 'black';
+
+const rect3 = {} as Rect;
+const rect4 = <Rect>{};
+
+// =====================================
+
