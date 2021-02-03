@@ -28,4 +28,4 @@ var car = new Car("Tesla");
 car.Drive("Odessa");
 
 var types = new TypeScroll("2.0.1");
-types.Info("Ruslan");
+console.log(types.Info("Ruslan"));

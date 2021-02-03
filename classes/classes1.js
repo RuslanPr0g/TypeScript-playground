@@ -1,8 +1,10 @@
+"use strict";
+exports.__esModule = true;
 var TypeScroll = /** @class */ (function () {
     function TypeScroll(version) {
         this.version = version;
     }
-    TypeScroll.prototype.info = function (name) {
+    TypeScroll.prototype.Info = function (name) {
         return "[" + name + "]: TypeScroll version is " + this.version + ".";
     };
     return TypeScroll;
@@ -18,3 +20,5 @@ var Car = /** @class */ (function () {
 }());
 var car = new Car("Tesla");
 car.Drive("Odessa");
+var types = new TypeScroll("2.0.1");
+console.log(types.Info("Ruslan"));
