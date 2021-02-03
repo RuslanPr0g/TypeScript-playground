@@ -25,3 +25,6 @@ class Car implements IDriveable {
         console.log("driving to " + toLocation + "...");
     }
 }
+
+var car = new Car("Tesla");
+car.Drive("Odessa");
