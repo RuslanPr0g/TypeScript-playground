@@ -24,8 +24,42 @@ class Car implements IDriveable {
     }
 }
 
-var car = new Car("Tesla");
-car.Drive("Odessa");
+// var car = new Car("Tesla");
+// car.Drive("Odessa");
 
-var types = new TypeScroll("2.0.1");
-console.log(types.Info("Ruslan"));
+// var types = new TypeScroll("2.0.1");
+// console.log(types.Info("Ruslan"));
+
+// ====================================
+
+class Animal {
+    protected voice: string = '';
+    public color: string = 'black';
+
+    public eat() {
+        this.go();
+        console.log("eating...");
+    }
+
+    private go() : void {
+        console.log("going..for...food...");
+    }
+}
+
+class Cat extends Animal {
+    public setVoice(voice: string) : void {
+        this.voice = voice;
+    }
+
+    public eat() {
+        console.log(this.voice);
+        console.log("eating...");
+    }
+}
+
+var animal = new Animal();
+animal.eat();
+
+var cat = new Cat();
+cat.setVoice("MEOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+cat.eat();
