@@ -34,3 +34,7 @@ const neverSayLol = (message: string) : never => {
 }
 
 // Type
+type Lol = string;
+
+const lol: Lol = "lol";
+
