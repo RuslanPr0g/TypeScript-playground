@@ -18,3 +18,10 @@ var foo = function (name) {
     console.log(name);
 };
 foo("lol");
+// Never
+var neverSayLol = function (message) {
+    throw new Error(message);
+};
+var lol = "lol";
+var id1 = 111;
+var id2 = "111";
