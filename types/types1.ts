@@ -28,3 +28,9 @@ const foo = (name: string): void => {
 
 foo("lol");
 
+// Never
+const neverSayLol = (message: string) : never => {
+    throw new Error(message);
+}
+
+// Type
