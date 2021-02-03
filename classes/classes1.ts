@@ -57,9 +57,31 @@ class Cat extends Animal {
     }
 }
 
-var animal = new Animal();
-animal.eat();
+// var animal = new Animal();
+// animal.eat();
 
-var cat = new Cat();
-cat.setVoice("MEOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-cat.eat();
+// var cat = new Cat();
+// cat.setVoice("MEOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+// cat.eat();
+
+// ====================================================
+
+abstract class Compoenent {
+    abstract render(): void;
+    abstract info(): string;
+}
+
+class AppComponent extends Compoenent {
+    render() : void {
+        console.log("rendering..");
+        console.log("rendered!");
+    }
+
+    info(): string {
+        return "Application component";
+    }
+}
+
+var app = new AppComponent();
+app.render();
+console.log(app.info())

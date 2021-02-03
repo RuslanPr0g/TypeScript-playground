@@ -64,8 +64,31 @@ var Cat = /** @class */ (function (_super) {
     };
     return Cat;
 }(Animal));
-var animal = new Animal();
-animal.eat();
-var cat = new Cat();
-cat.setVoice("MEOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-cat.eat();
+// var animal = new Animal();
+// animal.eat();
+// var cat = new Cat();
+// cat.setVoice("MEOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+// cat.eat();
+// ====================================================
+var Compoenent = /** @class */ (function () {
+    function Compoenent() {
+    }
+    return Compoenent;
+}());
+var AppComponent = /** @class */ (function (_super) {
+    __extends(AppComponent, _super);
+    function AppComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    AppComponent.prototype.render = function () {
+        console.log("rendering..");
+        console.log("rendered!");
+    };
+    AppComponent.prototype.info = function () {
+        return "Application component";
+    };
+    return AppComponent;
+}(Compoenent));
+var app = new AppComponent();
+app.render();
+console.log(app.info());
