@@ -32,3 +32,21 @@ const rect4 = <Rect>{};
 
 // =====================================
 
+interface RectWithArea extends Rect {
+    getArea: () => number
+}
+
+const rect5: RectWithArea = {
+    id: '1234',
+    size: {
+        width: 20,
+        height: 30
+    },
+    color: "#000",
+    getArea: (): number {
+        return this.size.width * this.size.height
+    }
+}
+
+// ===================
+
