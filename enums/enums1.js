@@ -6,4 +6,6 @@ var Membership;
 })(Membership || (Membership = {}));
 ;
 var membership = Membership.Standard;
+var membershipReversed = Membership[1];
 console.log(membership);
+console.log(membershipReversed);
