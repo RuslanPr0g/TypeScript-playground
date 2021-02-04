@@ -6,3 +6,5 @@ function reverse<T>(array: T[]): Array<T>
     return array.reverse();
 }
 
+console.log(reverse(arrayOfNumbers));
+console.log(reverse(arrayOfStrings));
