@@ -35,3 +35,10 @@ function handle(res: MyResponse | MyError) {
 
 // ======================
 
+type AlertType = 'success' | 'dander' | 'warning';
+
+function SetAlertType(type: AlertType) {
+    // ...
+}
+
+setAlertType('danger');
