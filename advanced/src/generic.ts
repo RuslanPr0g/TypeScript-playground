@@ -11,7 +11,7 @@
 //     console.log(data);
 // })
 
-function mergeObjects(a: object, b: object) {
+function mergeObjects<T, R>(a: T, b: R): T & R {
     return Object.assign({}, a, b);
 }
 
