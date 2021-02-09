@@ -11,8 +11,8 @@
 //     console.log(data);
 // })
 
-// function mergeObjects<T, R>(a: T, b: R): T & R {
-//     return Object.assign({}, a, b);
-// }
+function mergeObjects<T extends object, R extends object>(a: T, b: R): T & R {
+    return Object.assign({}, a, b);
+}
 
-// const merged = mergeObjects({name: 'Vladian'}, {age: 26});
+const merged = mergeObjects({name: 'Vladian'}, {age: 26});
