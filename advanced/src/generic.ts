@@ -1,9 +1,12 @@
 // const cars: string[]= ['Ford', 'Audi', ''];
 // const cars2: Array<string> = ['Ford', 'Audi', ''];
 
-const promise  = new Promise(resolve => {
+const promise  = new Promise<string>(resolve => {
     setTimeout(() => {
         resolve('Resolving....');
     }, 2000)
 });
 
+promise.then(data => {
+    console.log(data);
+})
