@@ -16,3 +16,15 @@ function mergeObjects<T extends object, R extends object>(a: T, b: R): T & R {
 }
 
 const merged = mergeObjects({name: 'Vladian'}, {age: 26});
+
+// =================
+
+function withCount<T extends ILength>(value: T): {value: T, count: string} {
+    return {
+        value,
+        count: `In this object ${value.length} symbols.`
+    }
+}
+
+// =============================
+

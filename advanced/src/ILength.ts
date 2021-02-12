@@ -1,0 +1,3 @@
+interface ILength {
+    length: number;
+}
