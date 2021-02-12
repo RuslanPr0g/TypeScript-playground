@@ -79,3 +79,8 @@ function createAndValidate(model: string, year: number) : Car {
     return car as Car;
 }
 
+// ===============================
+
+const newCars: Readonly<Array<string>> = ['Ford', 'Audi'];
+// cars.shift();
+

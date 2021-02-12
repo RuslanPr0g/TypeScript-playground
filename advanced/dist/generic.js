@@ -39,3 +39,15 @@ class Collection {
 const strings = new Collection(['I', 'Am', 'Ruslan']);
 strings.add('!');
 strings.remove('Am');
+function createAndValidate(model, year) {
+    const car = {};
+    if (model.length > 3) {
+        car.model = model;
+    }
+    if (year > 2000) {
+        car.year = year;
+    }
+    return car;
+}
+const newCars = ['Ford', 'Audi'];
+cars.shift();
