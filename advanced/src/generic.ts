@@ -60,3 +60,22 @@ strings.remove('Am');
 
 // ======================
 
+interface Car {
+    model: string;
+    year: number;
+}
+
+function createAndValidate(model: string, year: number) : Car {
+    const car: Partial<Car> = {};
+
+    if(model.length > 3) {
+        car.model = model;
+    }
+
+    if (year > 2000) {
+        car.year = year;
+    }
+
+    return car as Car;
+}
+
