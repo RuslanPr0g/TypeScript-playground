@@ -50,4 +50,3 @@ function createAndValidate(model, year) {
     return car;
 }
 const newCars = ['Ford', 'Audi'];
-cars.shift();
