@@ -15,6 +15,9 @@ let Component = class Component {
     constructor(name) {
         this.name = name;
     }
+    get componentName() {
+        return this.name;
+    }
     logName() {
         console.log('Component Name: ' + this.name);
     }
@@ -22,6 +25,9 @@ let Component = class Component {
 __decorate([
     Log2
 ], Component.prototype, "name", void 0);
+__decorate([
+    Log3
+], Component.prototype, "componentName", null);
 __decorate([
     Log3
 ], Component.prototype, "logName", null);

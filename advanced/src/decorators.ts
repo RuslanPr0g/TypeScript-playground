@@ -19,6 +19,11 @@ class Component {
     }
 
     @Log3
+    get componentName() {
+        return this.name;
+    }
+
+    @Log3
     logName(): void {
         console.log('Component Name: ' + this.name);
     }
